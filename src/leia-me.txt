@@ -1,0 +1,6 @@
+Faça um relatório contendo os testes de unidade e integração das classes.
+Execute a classe principal para observar a dinâmica do código.
+Crie casos de testes e execute os testes para encontrar os erros.
+Lembre-se, mesmo que o erro esteja visível por você, escreva o teste automatizado para pegar o erro.
+Faça os prints dos erros e da solução.
+Descreva quais erros foram encontrados e como solucionou.
