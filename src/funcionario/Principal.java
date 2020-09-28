@@ -14,13 +14,22 @@ public class Principal {
 		func.setFuncao(JOptionPane.showInputDialog("informe o setor: \n"));
 		func.setSetor(JOptionPane.showInputDialog("informe a funcao: \n"));
 		
-		sal.setSalario(Double.parseDouble(JOptionPane.showInputDialog("informe o salario: \n")));
+		String inputSalario = JOptionPane.showInputDialog("informe o salario: \n");
 		
-		if(!sal.validarSalario(sal.getSalario())){
+		if(inputSalario.isEmpty())
+			inputSalario = "0";
+			
+		sal.setSalario(Double.parseDouble(inputSalario));
+		
+		if(!sal.validarSalario(sal.getSalario()))
 		    JOptionPane.showMessageDialog(null, "Salario invalido!");
-		}
 		
-		sal.setAdiantamento(Double.parseDouble(JOptionPane.showInputDialog("informe o adiantamento recebido: \n"))); 
+		String inputAdiantamento = JOptionPane.showInputDialog("informe o adiantamento recebido: \n");
+		
+		if(inputAdiantamento.isEmpty())
+			inputAdiantamento = "0";
+		
+		sal.setAdiantamento(Double.parseDouble(inputAdiantamento)); 
 		if(!sal.validarAdiantamento(sal.getAdiantamento()))
 			JOptionPane.showMessageDialog(null, "Adiantamento invalido!");
 				 

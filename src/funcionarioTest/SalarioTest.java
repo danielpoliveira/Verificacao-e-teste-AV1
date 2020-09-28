@@ -36,11 +36,9 @@ class SalarioTest {
 	@Test 
 	public void testGetEmptyAdiantamento() {
 		Salario s1 = new Salario();
-	
 		
 		assertEquals(600, s1.getAdiantamento());
 	}
-	
 	
 	@Test
 	public void testValidarSalario() {
