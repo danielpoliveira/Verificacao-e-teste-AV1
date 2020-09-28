@@ -10,15 +10,11 @@ public class Principal {
 		FuncADM ADM = new FuncADM();
 		Salario sal = new Salario();		
 		
-		
 		func.setNome(JOptionPane.showInputDialog("informe o nome do funcionario: \n"));
 		func.setFuncao(JOptionPane.showInputDialog("informe o setor: \n"));
 		func.setSetor(JOptionPane.showInputDialog("informe a funcao: \n"));
 		
-		
 		sal.setSalario(Double.parseDouble(JOptionPane.showInputDialog("informe o salario: \n")));
-		
-		System.out.println(sal.calcularDesconto());
 		
 		if(!sal.validarSalario(sal.getSalario())){
 		    JOptionPane.showMessageDialog(null, "Salario invalido!");

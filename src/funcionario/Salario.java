@@ -11,11 +11,14 @@ public class Salario {
 		    	adiantamento = 600;
 		    	salario = 6000;
 		    	
-		    	INSS = new Inss().calcularINSS(getSalario());
-		    	IRRF = new Irrf().calcularIRRF(getSalario());		    	
+		    	INSS = new Inss().calcularINSS(salario);
+		    	IRRF = new Irrf().calcularIRRF(salario);		    	
 		    }
 		    
-		    public double calcularDesconto(){		    	
+		    public double calcularDesconto(){		
+		    	
+		    	System.out.println(INSS);
+		    	System.out.println(IRRF);
 		    	return INSS + IRRF;
 		    }
 		    
