@@ -5,6 +5,7 @@ public class Funcionario {
     private String funcao;
     private String setor;
     
+    //Código corrigido
     public Funcionario() {
     	this.nome 	= "";
     	this.funcao = "";

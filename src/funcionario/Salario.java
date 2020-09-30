@@ -1,22 +1,17 @@
 package funcionario;
 
 public class Salario {	  		
-		   
 		    private double adiantamento;
 		    private double salario;
-		    double INSS; 
-	    	double IRRF;
-		    
+		    double INSS, IRRF;
 		    public Salario() {
 		    	adiantamento = 600;
 		    	salario = 6000;
-		    	
 		    	INSS = new Inss().calcularINSS(salario);
 		    	IRRF = new Irrf().calcularIRRF(salario);		    	
 		    }
 		    
 		    public double calcularDesconto(){		
-		    	
 		    	System.out.println(INSS);
 		    	System.out.println(IRRF);
 		    	return INSS + IRRF;
@@ -50,17 +45,12 @@ public class Salario {
 		        return adiantamento;
 		    }
 		    public void setSalario(double salario){
-		    	
 		        this.salario = salario;
-		        
 		        setInss();
 		        setIrrf();
 		    }
 		    public double getSalario(){
 		        return salario;
 		    }
-		    
-		    
-		    
 }
 		    
